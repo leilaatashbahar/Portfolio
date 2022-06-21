@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'BYekan';
+    src: url('/src/assets/fonts/BYekan.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.appContainer {
+    font-family: "BYekan", Tahoma, Verdana, sans-serif;
+}
+
+
+/* برای گوشی های موبایل */
+
+@media only screen and (max-width: 800px) {
+    .appContainer {
+        flex-direction: column;
+        margin-right: 0;
+    }
+}
+
+
+/* برای تبلت ها در حالت عمودی و گوشی های موبایل کمی بزرگتر */
+
+@media only screen and (min-width: 700px) {}
+
+
+/* برای لپ تاپ ها و تبلت ها بصورت افقی */
+
+@media only screen and (min-width: 769px) {}
+
+
+/* برای صفحه نمایش های بزرگ مثه کامپیوتر و بالاتر */
+
+@media only screen and (min-width: 1280px) {}

@@ -1,0 +1,33 @@
+.work {
+    background: #1a1a1a;
+    height: 55vh;
+    color: white;
+    padding: 50px;
+}
+
+.workComponent {
+    padding: 30px;
+    display: flex;
+    direction: rtl;
+}
+
+.h1Work {
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .h1Work {
+        text-align: center;
+    }
+    .work {
+        width: 100%;
+        padding: 5px;
+    }
+    .workComponent {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 400px) {}

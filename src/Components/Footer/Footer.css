@@ -1,0 +1,30 @@
+footer {
+    border-top: 1px solid #646464;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background: #090909;
+    color: rgb(172, 172, 172);
+}
+
+.footerIcon {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+
+.footerPara {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+hr {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.footerIcon a {
+    color: rgb(173, 173, 173);
+    padding: 8px;
+}

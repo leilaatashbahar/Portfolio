@@ -1,0 +1,108 @@
+.contactContainer {
+    background-color: black;
+    height: 100vh;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contactIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 1rem;
+    width: 40%;
+    align-items: flex-end;
+}
+
+.iconItemContact {
+    font-size: 1.5rem;
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.iconItemContact i {
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    color: #D43F52;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    width: 50px;
+    height: 50px;
+    line-height: 55px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 2rem;
+}
+
+.form-control {
+    background: transparent;
+    border: 2px solid #999;
+    border-radius: 0;
+    box-shadow: none;
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.form input[type="submit"] {
+    background: #D43F52;
+    border: 2px solid transparent;
+    color: #ffffff;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+}
+
+.form input[type="submit"]:hover {
+    background: #ffffff;
+    color: #D43F52;
+}
+
+@media only screen and (max-width: 800px) {
+    .contactContainer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .form {
+        order: 2;
+        width: 100%;
+        padding: 10px;
+    }
+    .contactIcon {
+        overflow: hidden;
+        order: 1;
+        width: 100%;
+        padding: 50px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .iconItem i {
+        margin-right: .5rem;
+    }
+    .spanContact {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .spanContact {
+        font-size: .9rem;
+    }
+}

@@ -1,0 +1,99 @@
+.about {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sectionAbout {
+    text-align: right;
+    direction: rtl;
+    width: 40%;
+    padding-left: 60px;
+    margin-top: -50px;
+}
+
+.progressAbout {
+    width: 40%;
+}
+
+.sectionAbout .h2About {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.about .h3About {
+    color: brown;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.paraAbout {
+    color: rgb(179, 178, 178);
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        align-items: center;
+    }
+    .progressAbout {
+        order: 2;
+        width: 100%;
+        padding: 10px;
+    }
+    .sectionAbout {
+        overflow: hidden;
+        order: 1;
+        width: 100%;
+        padding: 50px;
+    }
+    .sectionAbout .h2About {
+        font-size: 2.5rem;
+        margin-top: 3rem;
+    }
+    .sectionAbout .h3About {
+        color: brown;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .sectionAbout .paraAbout {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        align-items: center;
+    }
+    .sectionAbout {
+        width: 100%;
+        padding: 20px;
+    }
+    .sectionAbout .h2About {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+    .sectionAbout .h3About {
+        color: brown;
+        font-size: 1.8rem;
+        margin-bottom: .8rem;
+    }
+    .sectionAbout .paraAbout {
+        font-size: .9rem;
+    }
+    .progressAbout {
+        width: 100%;
+        padding: 10px;
+    }
+}
