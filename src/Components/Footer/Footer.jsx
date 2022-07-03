@@ -11,7 +11,7 @@ export default class Footer extends Component {
 			<div class="containerFooter">
 				
 					<p className='footerPara'>
-            وبسایت شخصی لیلا آتش بهار. طراحی شده بوسیله لیلا آتش بهار
+            وبسایت شخصی , طراحی شده بوسیله لیلا آتش بهار
           </p>
           <hr />
           <div className="footerIcon">

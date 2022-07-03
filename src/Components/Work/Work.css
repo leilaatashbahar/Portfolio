@@ -1,27 +1,31 @@
 .work {
     background: #1a1a1a;
-    height: 55vh;
+    height: auto;
     color: white;
-    padding: 50px;
+    padding: .2rem;
 }
 
 .workComponent {
-    padding: 30px;
+    padding: 10px;
     display: flex;
     direction: rtl;
+    flex-direction: column;
 }
 
 .h1Work {
+    padding-top: 2rem;
     text-align: center;
 }
 
-@media only screen and (max-width: 800px) {
+@media screen and (min-width:40rem) {
+    /*----Mobile 640px-----*/
     .h1Work {
         text-align: center;
     }
     .work {
         width: 100%;
-        padding: 5px;
+        padding: 1rem;
+        height: auto;
     }
     .workComponent {
         padding: 5px;
@@ -30,4 +34,61 @@
     }
 }
 
-@media only screen and (max-width: 400px) {}
+@media screen and (min-width: 48rem) {
+    /*---------Tablet  768px--------*/
+    .h1Work {
+        text-align: center;
+    }
+    .work {
+        width: 100%;
+        padding: 1rem;
+        height: auto;
+    }
+    .workComponent {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:64rem) {
+    /*--------------Laptop  1024px--------------*/
+    .h1Work {
+        text-align: center;
+    }
+    .work {
+        width: 100%;
+        padding: 1rem;
+        height: auto;
+    }
+    .workComponent {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:64rem) {
+    /*--------------Laptop  1024px--------------*/
+    .h1Work {
+        text-align: center;
+    }
+    .work {
+        width: 100%;
+        padding: 1rem;
+        height: auto;
+    }
+    .workComponent {
+        padding: .9rem;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width:80rem) {
+    /*---------------PC  1280px-------------------*/
+}
+
+@media screen and (min-width:96rem) {
+    /*----------------4K 1536px-------------------*/
+}

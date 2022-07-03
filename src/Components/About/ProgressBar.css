@@ -8,18 +8,47 @@
         font-family: sans-serif;
     }
     
-    @media only screen and (max-width: 800px) {
+    @media screen and (min-width:40rem) {
+        /*-------Mobile 640px------------*/
         .progressHeader {
-            font-size: .9rem;
+            font-size: 1rem;
+            text-align: center;
+            margin-top: 1rem;
+        }
+    }
+    
+    @media screen and (min-width: 48rem) {
+        /*---------------Tablet 768px----------*/
+        .progressHeader {
+            font-size: 1.4rem;
             text-align: center;
             margin-top: 2rem;
         }
     }
     
-    @media only screen and (max-width: 400px) {
+    @media screen and (min-width: 64rem) {
+        /*----------------Laptop 1024px-------------*/
         .progressHeader {
-            font-size: .7rem;
-            text-align: center;
-            margin-top: 1rem;
+            font-size: 1rem;
+            margin-top: 0;
         }
     }
+    /*--- @media screen and (min-width:40rem) {
+        -------Mobile 640px------------
+    }
+    
+    @media screen and (min-width: 48rem) {
+        ---------------Tablet 768px----------
+    }
+    
+    @media screen and (min-width: 64rem) {
+        ----------------Laptop 1024px-------------
+    }
+    
+    @media screen and (min-width: 80rem) {
+        -------------------Pc 1280px------------
+    }
+    
+    @media screen and (min-width: 90rem) {
+        --------------4K 1536px-----------
+    }*/

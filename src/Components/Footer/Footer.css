@@ -11,12 +11,12 @@ footer {
     width: 30%;
     margin: 0 auto;
     margin-top: 1rem;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 .footerPara {
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 hr {
@@ -28,3 +28,36 @@ hr {
     color: rgb(173, 173, 173);
     padding: 8px;
 }
+
+@media screen and (min-width:40rem) {
+    /*-------Mobile 640px------------*/
+    .footerIcon {
+        font-size: 1.3rem;
+    }
+    .footerPara {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 48rem) {
+    /*---------------Tablet 768px----------*/
+    .footerIcon {
+        font-size: 1.5rem;
+    }
+    .footerPara {
+        font-size: 1.5rem;
+    }
+}
+
+
+/*@media screen and (min-width: 64rem) {
+        ----------------Laptop 1024px-------------
+    }
+    
+    @media screen and (min-width: 80rem) {
+        -------------------Pc 1280px------------
+    }
+    
+    @media screen and (min-width: 90rem) {
+        --------------4K 1536px-----------
+    }*/

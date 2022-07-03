@@ -4,8 +4,12 @@
     background-repeat: no-repeat;
     overflow: hidden;
     text-align: center;
-    height: 100vh;
     color: white;
+    width: 100%;
+}
+
+.h1Home {
+    margin-top: 4rem;
 }
 
 .containerHome {
@@ -13,8 +17,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
-    top: 20%;
+    height: 100vh;
 }
 
 .spanHome {
@@ -52,11 +55,16 @@
 }
 
 .aboutText {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     margin-top: 3rem;
+    direction: rtl;
+    text-align: center;
+    padding: .7rem;
+    line-height: 2rem;
 }
 
 a.btn {
+    margin-top: 2rem;
     background: transparent;
     border: 2px solid #ffffff;
     color: #ffffff;
@@ -64,7 +72,6 @@ a.btn {
     font-weight: bold;
     width: 180px;
     height: 60px;
-    margin-top: 40px;
     padding-top: 18px;
     text-decoration: none;
     transition: all 0.4s ease-in-out;
@@ -75,37 +82,54 @@ a.btn:hover {
     transition: all 1s;
 }
 
-@media only screen and (max-width: 800px) {
-    .aboutText {
-        font-size: 1.5rem;
-        margin-top: 3rem;
-        text-align: center;
+@media screen and (min-width:40rem) {
+    /*----Mobile 640px-----*/
+    img {
+        height: 100vh;
     }
-    a.btn {
-        display: none;
+    .aboutText {
+        font-size: 1.3rem;
+        padding: 50px 10px 0px;
+        margin-bottom: 4rem;
+    }
+    .btn {
+        margin-top: 1rem;
     }
 }
 
-@media only screen and (max-width: 425px) {
-    .spanHome {
-        padding: 10px;
-        margin-top: 3rem;
+@media screen and (min-width: 48rem) {
+    /*---------Tablet  768px--------*/
+    .aboutText {
+        font-size: 1.4rem;
+        padding: 45px 10px 0px;
+        margin-bottom: 4rem;
+        line-height: 2.5rem;
     }
-    .h1Home {
+}
+
+@media screen and (min-width:64rem) {
+    /*--------------Laptop  1024px--------------*/
+    .aboutText {
+        font-size: 1.4rem;
+        padding: 45px 8px 0px;
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (min-width:80rem) {
+    /*---------------PC  1280px-------------------*/
+    .aboutText {
+        font-size: 1.7rem;
+        padding: 40px 8px 0px;
         margin-bottom: 3rem;
     }
-    .aboutText {
-        font-size: .9rem;
-        margin-top: 2rem;
-        text-align: center;
-    }
-    a.btn {
-        display: none;
-    }
 }
 
-@media only screen and (max-width: 320px) {
+@media screen and (min-width:96rem) {
+    /*----------------4K 1536px-------------------*/
     .aboutText {
-        font-size: .7rem;
+        font-size: 2rem;
+        padding: 35px 6px 0px;
+        margin-bottom: 3rem;
     }
 }

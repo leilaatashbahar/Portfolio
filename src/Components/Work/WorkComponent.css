@@ -1,6 +1,7 @@
     .workComponentItem {
         width: 30%;
         margin-left: 2rem;
+        width: 100%;
     }
     
     .headerWorkComponentItem {
@@ -10,12 +11,13 @@
     }
     
     .iconWorkComponentItem {
-        margin-left: 10px;
+        margin-left: 1rem;
+        padding: .7rem;
         border: 2px solid #ffffff;
         border-radius: 50%;
         color: #D43F52;
         font-size: 2rem;
-        margin-right: 24px;
+        margin-right: .2rem;
         width: 60px;
         height: 60px;
         line-height: 55px;
@@ -32,31 +34,88 @@
     
     .textWorkComponentItem {
         margin-top: 1rem;
-        text-align: justify;
+        text-align: right;
         font-size: 1.2rem;
-        margin-right: 1rem;
+        margin-right: 3rem;
+        display: none;
     }
     
-    @media only screen and (max-width: 800px) {
+    .h2WorkComponentItem {
+        font-size: 1rem;
+    }
+    
+    @media screen and (min-width:40rem) {
+        /*-------Mobile 640px------------*/
+        .textWorkComponentItem {
+            display: none;
+        }
         .workComponentItem {
-            display: flex;
-            width: auto;
-            align-items: center;
-            height: 70px;
+            width: 100%;
         }
-        .headerWorkComponentItem {
-            display: flex;
-            flex-direction: row;
+        .h2WorkComponentItem {
+            font-size: 1.25rem;
         }
+        .iconWorkComponentItem {
+            margin-right: 0px;
+        }
+    }
+    
+    @media screen and (min-width: 48rem) {
+        /*---------------Tablet 768px----------*/
+        .textWorkComponentItem {
+            display: block;
+        }
+        .workComponentItem {
+            width: 100%;
+        }
+        .h2WorkComponentItem {
+            font-size: 1.8rem;
+        }
+        .iconWorkComponentItem {
+            margin-right: 0px;
+        }
+    }
+    
+    @media screen and (min-width: 64rem) {
+        /*----------------Laptop 1024px-------------*/
+        .workComponentItem {
+            width: 100%;
+        }
+        .h2WorkComponentItem {
+            font-size: 1.25rem;
+        }
+        .iconWorkComponentItem {
+            margin-right: 0px;
+        }
+    }
+    
+    @media screen and (min-width: 80rem) {
+        /*-------------------Pc 1280px------------*/
+        .workComponentItem {
+            width: 100%;
+        }
+        .h2WorkComponentItem {
+            font-size: 1.25rem;
+        }
+        .textWorkComponentItem {
+            margin-top: 1.3rem;
+            text-align: justify;
+            font-size: 1.2rem;
+            margin-right: 2rem;
+        }
+    }
+    
+    @media screen and (min-width: 90rem) {
+        /*--------------4K 1536px-----------*/
         .iconWorkComponentItem {
             margin-left: 10px;
             border: 2px solid #ffffff;
             border-radius: 50%;
             color: #D43F52;
-            font-size: 1.5rem;
+            font-size: 5rem;
             margin-right: 24px;
-            width: 55px;
-            height: 55px;
+            width: 110px;
+            height: 110px;
             line-height: 55px;
             text-align: center;
             display: flex;
@@ -64,26 +123,29 @@
             align-items: center;
             cursor: pointer;
         }
-        .textWorkComponentItem {
-            margin-top: 1rem;
-            text-align: right;
-            font-size: 1rem;
-            margin-right: 1rem;
-        }
         .h2WorkComponentItem {
-            font-size: 1.3rem;
+            font-size: 2.2rem;
         }
-        @media only screen and (max-width: 425px) {
-            .h2WorkComponentItem {
-                font-size: .9rem;
-            }
-            .iconWorkComponentItem {
-                font-size: 1.3rem;
-                width: 45px;
-                height: 45px;
-            }
-            .textWorkComponentItem {
-                font-size: .8rem;
-            }
+        .textWorkComponentItem {
+            font-size: 1.5rem;
         }
     }
+    /*--- @media screen and (min-width:40rem) {
+        -------Mobile 640px------------
+    }
+    
+    @media screen and (min-width: 48rem) {
+        ---------------Tablet 768px----------
+    }
+    
+    @media screen and (min-width: 64rem) {
+        ----------------Laptop 1024px-------------
+    }
+    
+    @media screen and (min-width: 80rem) {
+        -------------------Pc 1280px------------
+    }
+    
+    @media screen and (min-width: 90rem) {
+        --------------4K 1536px-----------
+    }*/

@@ -12,7 +12,7 @@ export default class Home extends Component {
             <p className="animationText">React Developer...</p>
 
             <p className="aboutText">
-              اینجا وبسایت شخصی منه. من یک طراح و توسعه دهنده سمت فرانت
+              اینجا وبسایت شخصی منه، من یک طراح و توسعه دهنده سمت فرانت
               هستم. در اینجا میتونید نمونه کارها و مهارتهای من رو ببینید
             </p>
               <a href="#section2" className="btn">بیاین شروع کنیم</a>
